@@ -1,0 +1,9 @@
+<h1>Space X</h1>
+<dl>
+  <% @spacex.each do |flight| %>
+   Mission Name: <%= flight["mission_name"] %> <br />
+   Launch Year: <%= flight["launch_year"] %> <br />
+   Details: <%=flight["details"] %> <br />
+    <br />
+  <% end %>
+</dl>
